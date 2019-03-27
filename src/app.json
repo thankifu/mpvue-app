@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/check/main",
+    "pages/order/main",
+    "pages/mine/main"
+  ],
+  "tabBar": {
+    "color":"#959394",
+    "selectedColor":"#009eef",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "pages/check/main",
+        "text": "学习",
+        "iconPath": "/static/images/i-1.png",
+        "selectedIconPath": "/static/images/i-1.png"
+      },
+      {
+        "pagePath": "pages/order/main",
+        "text": "订单",
+        "iconPath": "/static/images/i-2.png",
+        "selectedIconPath": "/static/images/i-2.png"
+      },
+      {
+        "pagePath": "pages/mine/main",
+        "text": "我的",
+        "iconPath": "/static/images/i-3.png",
+        "selectedIconPath": "/static/images/i-3.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第一个小程序",
+    "navigationBarTextStyle": "black"
+  }
+}
