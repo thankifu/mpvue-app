@@ -1,6 +1,6 @@
 <template>
-    <div class="mine">
-    我的
+    <div class="lesson">
+    课程
     </div>
 </template>
 

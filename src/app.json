@@ -1,32 +1,34 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/check/main",
-    "pages/order/main",
+    "pages/question/main",
+    "pages/learn/main",
+    "pages/lesson/main",
     "pages/mine/main"
   ],
   "tabBar": {
     "color":"#959394",
     "selectedColor":"#009eef",
     "borderStyle":"black",
+    "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/check/main",
+        "pagePath": "pages/learn/main",
         "text": "学习",
-        "iconPath": "/static/images/i-1.png",
-        "selectedIconPath": "/static/images/i-1.png"
+        "iconPath": "/static/images/xue.jpg",
+        "selectedIconPath": "/static/images/xue_s.jpg"
       },
       {
-        "pagePath": "pages/order/main",
-        "text": "订单",
-        "iconPath": "/static/images/i-2.png",
-        "selectedIconPath": "/static/images/i-2.png"
+        "pagePath": "pages/lesson/main",
+        "text": "课程",
+        "iconPath": "/static/images/ke.jpg",
+        "selectedIconPath": "/static/images/ke_s.jpg"
       },
       {
         "pagePath": "pages/mine/main",
         "text": "我的",
-        "iconPath": "/static/images/i-3.png",
-        "selectedIconPath": "/static/images/i-3.png"
+        "iconPath": "/static/images/me.jpg",
+        "selectedIconPath": "/static/images/me_s.jpg"
       }
     ]
   },

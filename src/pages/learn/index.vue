@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-    订单
+    <div class="learn">
+    学习
     </div>
 </template>
 

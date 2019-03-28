@@ -8,7 +8,8 @@ Vue.use(Vuex);
 
 const state = {
     isAuthenticated: false,
-    user: null
+    user: null,
+    openId: ""
 };
 
 export default new Vuex.Store ({

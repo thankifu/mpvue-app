@@ -35,18 +35,40 @@ export default {
         getOpenid(code) {
             //三个参数 appid secret code
             const appid = "wx016d20632dcc9693";
-            const secret = "wx016d20632dcc9693";
-            wx.request({
+            const secret = "e5d16cc77a7a5005ff0915353df4d270";
+            this.$https.request({
                 url: this.$interfaces.getOpenid + appid + "/" + secret + "/" + code,
-                method: "get",
-                success(res){
-                    console.log(res.data);
-                },
-                fail(err){
-                    console.log(err);
-                }
-                
-            });
+                method: "get"
+            })
+            .then(res => {
+                //console.log(res);
+                //将openid存储到vuex中
+                this.$store.dispatch("setOpenId", res.openid);
+
+                //请求课程数据
+                this.isLearned(res.openid);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        },
+        isLearned(openid) {
+            this.$https.request({
+                url: this.$interfaces.getMyLesson + openid,
+                method: "get"
+            })
+            .then(res =>{
+                //console.log("已经测试过了");
+                wx.switchTab({
+                    url: "../learn/main"
+                });
+            })
+            .catch(res => {
+                //console.log("还没有测试");
+                wx.redirectTo({
+                    url: "../question/main"
+                });
+            })
         }
     }
 }

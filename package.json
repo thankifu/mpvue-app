@@ -1,9 +1,9 @@
 {
-  "name": "first-app",
+  "name": "mpvue-app",
   "version": "1.0.0",
   "mpvueTemplateProjectVersion": "0.1.0",
-  "description": "A Mpvue project",
-  "author": "fuxiaowei <fuxiaowei@4399inc.com>",
+  "description": "Mpvue framework learning.",
+  "author": "thankifu <i@thankifu.com>",
   "private": true,
   "scripts": {
     "dev:wx": "node build/dev-server.js wx",

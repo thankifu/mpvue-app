@@ -1,14 +1,10 @@
 <template>
-    <div class="container">
-    车检
+    <div class="question">
+        推荐课程设置
     </div>
 </template>
-
 <script>
 export default {
     
 }
 </script>
-
-<style scoped>
-</style>

@@ -1,6 +1,6 @@
 const https = {
     request(options ={}) {
-        const { url, data, header, method } = options;
+        const { url, method } = options;
 
         //加载动画
         wx.showLoading({
@@ -10,8 +10,6 @@ const https = {
         return new Promise((resolve, reject) => {
             wx.request({
                 url,
-                data,
-                header,
                 method,
                 success: function (res) {
                     wx.hideLoading();
